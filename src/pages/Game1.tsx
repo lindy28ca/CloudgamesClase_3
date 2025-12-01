@@ -5,20 +5,30 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function Game1() {
     const navigate = useNavigate();
 
-    // Unity context setup
-    const { unityProvider, sendMessage } = useUnityContext({
+    
+    const { unityProvider, sendMessage,unload } = useUnityContext({
         loaderUrl: "/Game1/GameOnePiece.loader.js",
-        dataUrl: "/Game1/GameOnePiece.data.unityweb",
-        frameworkUrl: "/Game1/GameOnePiece.framework.js.unityweb",
-        codeUrl: "/Game1/GameOnePiece.wasm.unityweb",
+        dataUrl: "/Game1/GameOnePiece.data.br",
+        frameworkUrl: "/Game1/GameOnePiece.framework.js.br",
+        codeUrl: "/Game1/GameOnePiece.wasm.br",
     });
 
-
+         useEffect(() => {
+        
+        return () => {
+           
+            unload().catch((e) => {
+                console.warn("Unity no estaba listo para descargarse o ya se cerró:", e);
+            });
+            
+            console.log("Orden de descarga enviada a Unity.");
+        };
+    }, [unload]); 
     return (
         <>
             <div className="centered-container">
                 <div className="centered-content">
-                    <h1 className="centered-title">React + Unity / Tecsup</h1>
+                    <h1 className="centered-title">Game 1</h1>
                     <Unity unityProvider={unityProvider} className="centered-unity" />
 
                 </div>
