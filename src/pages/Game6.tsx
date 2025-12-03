@@ -1,6 +1,6 @@
 function Game6(){
     return(
-          <>dsad
+          <>
             <div className="centered-container"> {/* React ya conoce esta clase por App.tsx */}
                 <div className="centered-content">
                     <h1 className="centered-title">Game 6</h1>
