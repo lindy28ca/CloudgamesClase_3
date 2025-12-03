@@ -44,7 +44,7 @@ function MainBanner() {
                 <div className="carousel-item">
                     <img src={banner5} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>EggAdventure</h1>
+                        <h1>EGGVENTURE</h1>
                     </div>
                 </div>
 
