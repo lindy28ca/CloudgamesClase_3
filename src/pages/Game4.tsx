@@ -29,7 +29,19 @@ function Game4() {
             <div className="centered-container">
                 <div className="centered-content">
                     <h1 className="centered-title">Game 4</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <Unity unityProvider={unityProvider} className="unity-game" />
+                    {/* DESCRIPCIÓN / INSTRUCCIONES */}
+                    <div className="game-description">
+                        <h2>Descripción del juego</h2>
+                        <p>
+                          Es un juego en el que el jugador lanza una bola por una pista larga y lisa con el objetivo de derribar la mayor cantidad de pinos posibles.
+                        </p>
+
+                        <h3>Instrucciones</h3>
+                        <ul>
+                            <li>Apunta y lanza la bola para derribar los pinos.</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>

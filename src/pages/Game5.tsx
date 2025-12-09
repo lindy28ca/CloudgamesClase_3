@@ -29,7 +29,20 @@ function Game5() {
             <div className="centered-container">
                 <div className="centered-content">
                     <h1 className="centered-title">Game 5</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <Unity unityProvider={unityProvider} className="unity-game" />
+                    <div className="game-description">
+                        <h2>Descripción del juego</h2>
+                        <p>
+                          Es un juego en el que el jugador podrá manejar a un huevito y tendra que superar diferentes niveles para lograr compvertirse en pollo.
+                        </p>
+
+                        <h3>Instrucciones</h3>
+                        <ul>
+                            <li>Usa las teclas de A - D para moverte.</li> 
+                            <li>Presiona espacio para saltar.</li> 
+                            <li>Evita los obstáculos y completa los niveles.</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>

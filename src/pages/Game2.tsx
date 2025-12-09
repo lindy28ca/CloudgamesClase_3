@@ -29,7 +29,19 @@ function Game2() {
             <div className="centered-container">
                 <div className="centered-content">
                     <h1 className="centered-title">Game 2</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <Unity unityProvider={unityProvider} className="unity-game" />
+                    {/* DESCRIPCIÓN / INSTRUCCIONES */}
+                    <div className="game-description">
+                        <h2>Descripción del juego</h2>
+                        <p>
+                          Es un juego en el que el jugador debe responder una serie de afirmaciones indicando si son verdaderas o falsas. Cada respuesta correcta suma puntos y pone a prueba el conocimiento, la memoria y la rapidez del jugador. El objetivo es obtener la mayor cantidad de aciertos posibles antes de que termine la partida.
+                        </p>
+
+                        <h3>Instrucciones</h3>
+                        <ul>
+                            <li>Presiona verdadero o falso, dependiendo de la pregunta.</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
