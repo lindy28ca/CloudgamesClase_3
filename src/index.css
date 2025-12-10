@@ -1,66 +1,108 @@
-/* Título grande (Tecsup) */
+:root {
+  --color1: #891d8d; 
+  --color2: #248043;
+  --color3: #81a343; 
+  --color4: #521c39; 
+  --color5: #d3b668; 
+
+}
+
+body {
+  font-family: 'Oxanium', sans-serif;
+  background-color: var(--color1); 
+  color: var(--color-negro); 
+}
+
 h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  background: linear-gradient(to right, #007bff, #33d4ff, #28ff8a);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2px;
 }
 
-/* Tu nombre */
 h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #0a5cff;
-  text-align: center;
-  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 48px;
+  letter-spacing: -2px;
+  text-transform: lowercase;
 }
 
-/* Subtítulo (Desarrollo de Videojuegos en Soluciones Cloud) */
 h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
-  background: linear-gradient(to right, #16a085, #1abc9c, #2ecc71);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 1px;
-  margin-top: -5px;
-  margin-bottom: 10px;
-}
-
-/* Navbar */
-nav {
-  background: #ffffff;
-  padding: 15px 0;
-  border-bottom: 3px solid #c8f3ff; /* línea azul suave */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Enlaces del menú */
-nav a {
-  margin: 0 12px;
-  font-size: 1.15rem;
-  color: #1a3d5c;            /* Azul oscuro elegante */
   font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-  padding: 5px 8px;
-  border-radius: 6px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-/* Efecto hover */
-nav a:hover {
-  color: white;
-  background: linear-gradient(45deg, #4dd0e1, #00b894, #74b9ff);
-  transform: scale(1.12);
+#page-header {
+  background-color: var(--color-gris-claro);
+  padding: 15px 0;
 }
 
-/* Opcional: que la letra active luzca resaltada */
-nav a.active {
-  background: linear-gradient(45deg, #00cec9, #0984e3);
-  color: white;
-  border-radius: 6px;
+.padded {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.list-group-item.active {
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+
+.carousel-indicators [data-bs-target] {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.botonEliminar {
+  cursor: pointer;
+}
+
+.botonEliminar:hover {
+  color: var(--color2);
+}
+
+.cantidad-carrito {
+  width: 100px;
+  display: inline-block;
+}
+
+.container-half-width {
+  width: 50%;
+}
+
+.container-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000000;
+  margin: -4px 0 0 -4px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

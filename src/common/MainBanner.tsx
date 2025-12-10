@@ -19,39 +19,38 @@ function MainBanner() {
                 <div className="carousel-item active">
                     <img src={banner1} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>One Piece Cards</h1>
+                        <h5>GameCards One Piece</h5>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner2} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>Bolos</h1>
+                        <h5> Bolos </h5>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner3} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>One Piece Trivia</h1>
+                        <h5>Trivia One Piece</h5>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner4} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>HouseLand</h1>
+                        <h5>HouseLand</h5>
                     </div>
                 </div>
-
                 <div className="carousel-item">
                     <img src={banner5} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>EGGVENTURE</h1>
+                        <h5>EggVenture</h5>
+                        
                     </div>
                 </div>
-
                 <div className="carousel-item">
                     <img src={banner6} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1>Bad Ice Cream</h1>
+                        <h5>BadIceCream</h5>
                     </div>
                 </div>
             </div>

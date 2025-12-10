@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect , Fragment} from "react";
 import { useNavigate } from "react-router-dom";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
@@ -29,7 +29,20 @@ function Game2() {
             <div className="centered-container">
                 <div className="centered-content">
                     <h1 className="centered-title">Game 2</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
+                    <Fragment>
+                              <Unity unityProvider={unityProvider} className="centered-unity" />
+                               <div className="game-description">
+                            <h2>Descripción</h2>
+                            <p>
+                              En este juego deberás encontrar los pares de las cartas en el menor tiempo posible.
+                            </p>
+                    
+                            <h2>Instrucciones</h2>
+                            <ul>
+                              <li>Clic Izquierdo para seleccionar una carta</li>
+                            </ul>
+                          </div>
+                            </Fragment>
 
                 </div>
             </div>

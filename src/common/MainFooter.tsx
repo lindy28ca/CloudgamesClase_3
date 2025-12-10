@@ -3,7 +3,8 @@ function MainFooter() {
     return (
         <footer id="main-footer">
             <div className="container">
-                2025 - Tecsup, todos los derechos reservados.
+                2025 - Lindy Greis Chipana Aliaga.
+                <p>Desarrollo de Videojuegos en Soluciones Cloud</p>
             </div>
         </footer>
     )

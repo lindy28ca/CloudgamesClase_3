@@ -11,6 +11,21 @@ function Game6(){
                         className="centered-unity" 
                         style={{ border: "none" }} 
                     ></iframe>
+
+          
+           <div className="game-description">
+        <h2>Descripción</h2>
+        <p>
+          En este juego deberás encontrar los pares de las cartas en el menor tiempo posible.
+        </p>
+
+        <h2>Instrucciones</h2>
+        <ul>
+          <li>Clic Izquierdo para seleccionar una carta</li>
+        </ul>
+      </div>
+  
+
                   
                 </div>
             </div>

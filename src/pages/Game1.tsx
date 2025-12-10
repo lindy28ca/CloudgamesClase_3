@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, Fragment} from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 function Game1() {
-    const navigate = useNavigate();
 
     
-    const { unityProvider, sendMessage,unload } = useUnityContext({
+    const { unityProvider, unload} = useUnityContext({
         loaderUrl: "/Game1/GameOnePiece.loader.js",
         dataUrl: "/Game1/GameOnePiece.data.br",
         frameworkUrl: "/Game1/GameOnePiece.framework.js.br",
         codeUrl: "/Game1/GameOnePiece.wasm.br",
     });
+
+
 
          useEffect(() => {
         
@@ -24,16 +24,27 @@ function Game1() {
             console.log("Orden de descarga enviada a Unity.");
         };
     }, [unload]); 
-    return (
-        <>
-            <div className="centered-container">
-                <div className="centered-content">
-                    <h1 className="centered-title">Game 1</h1>
-                    <Unity unityProvider={unityProvider} className="centered-unity" />
 
-                </div>
-            </div>
-        </>
+    return (
+        <div className="centered-container">
+      <div className="centered-content">
+        <h1 className="centered-title">Game 1</h1>
+        <Fragment>
+          <Unity unityProvider={unityProvider} className="centered-unity" />
+           <div className="game-description">
+        <h2>Descripción</h2>
+        <p>
+          En este juego deberás encontrar los pares de las cartas en el menor tiempo posible.
+        </p>
+
+        <h2>Instrucciones</h2>
+        <ul>
+          <li>Clic Izquierdo para seleccionar una carta</li>
+        </ul>
+      </div>
+        </Fragment>
+      </div>
+    </div>
     );
 }
 
